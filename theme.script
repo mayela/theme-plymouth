@@ -12,6 +12,7 @@ Window.SetBackgroundBottomColor(0,0,0);
     X=(L/2)-(logo.Imagen.GetWidth()/2);
     Y=(A/2)-(logo.Imagen.GetHeight()/2);   
     logo.Sprite.SetPosition(X,Y,0);
+    ImagenSprite.SetOpacity(0.5);
 fun refresh(){
     ImagenSprite.SetImage(Imagen);
     
