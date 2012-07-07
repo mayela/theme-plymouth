@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=theme
+Description=Este es mi intento de plymouth
+ModuleName=script
+
+[script]
+ImageDir=/home/mayela/Documentos/theme-plymouth/
+ScriptFile=/home/mayela/Documentos/theme-plymouth/theme.script
