@@ -11,11 +11,24 @@ Window.SetBackgroundBottomColor(0,0,0);
     logo.Sprite=Sprite(logo.Imagen);
     X=(L/2)-(logo.Imagen.GetWidth()/2);
     Y=(A/2)-(logo.Imagen.GetHeight()/2);   
-    logo.Sprite.SetPosition(X,Y,0);
+    logo.Sprite.SetPosition(X,Y,-1);
     ImagenSprite.SetOpacity(0.5);
+    Cadena="Emacs Rules";
+    CadenaI=Image.Text(Cadena);
+    CadenaS=Sprite();
+
 fun refresh(){
+    /*
+    @Funcion: refresh
+    @Argumentos:None
+
+    @Retorno:None
+    @Descripcion:Este funcion refresca el fondo de theme
+    */
+    global.CadenaS.SetImage(CadenaI);
     ImagenSprite.SetImage(Imagen);
     
 }
+refresh();
 Plymouth.SetRefreshFunction(refresh);
 status="normal";
