@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=wabby
+Description=Este es mi intento de plymouth con Wabby
+ModuleName=script
+
+[script]
+ImageDir=/home/mayela/Documentos/theme-plymouth/Sprites/Wabby
+ScriptFile=/home/mayela/Documentos/theme-plymouth/wabby.script
