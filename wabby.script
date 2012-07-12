@@ -20,6 +20,7 @@ fun refresh(){
 	i=1;
     else
     i+=0.3;
+    WabbyS.SetPosition(i*10,i*10,2);
     
 }
 refresh();
