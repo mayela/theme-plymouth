@@ -1,0 +1,38 @@
+if(Plymouth.GetMode() == "boot")
+{
+   Window.SetBackgroundTopColor(0.5,2,1);
+   Window.SetBackgroundBottomColor(0.5,2,1); 	
+   
+   for(i=1;i<=11;i++)
+	ThrobberI[i-1]=Image("throbber-0"+i+".png");
+	ThrobberS= Sprite();
+	i=1;
+
+}
+
+else
+{
+   Window.SetBackgroundTopColor(255,0,255);
+   Window.SetBackgroundBottomColor(0,0,0); 	
+   
+   for(i=1;i<=11;i++)
+	ThrobberI[i-1]=Image("throbber-0"+i+".png");
+	ThrobberS= Sprite();
+	i=1;
+
+}
+
+fun refresh()
+{
+  @Funcion: refresh
+  @Argumentos: ninguno
+  @Retorno: none
+  @Descripcion:Esta funcion muestra el plymouth con throbber
+  ThrobberS.SetImage(Throbber[Math.Int(i)]);
+  if(i>11)
+	i=1;
+   else
+	i+=0.003;
+}
+Plymouth.SetRefreshfunction(refresh);
+status="normal";
