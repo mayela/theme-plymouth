@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=my-plymouth
+Description=Este es el plymouth en el que estare trabajando como parte del proyecto de desarrollo
+ModuleName=script
+
+[script]
+ImageDir=/home/mayela/Documentos/theme-plymouth/Sprites/Throbber
+ScriptFile=/home/mayela/Documentos/theme-plymouth/my-plymouth.script
